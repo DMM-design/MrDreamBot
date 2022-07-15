@@ -11,7 +11,7 @@ export default defineNuxtConfig({
                 { name: 'viewport', content: 'width=device-width, initial-scale=1' },
                 { name: "author", content: "Domingo Mesa Maliniak" },
                 { name: "keywords", content: "BOT, DreamBOT, TwitchBot, Twitch, Streaming, Game" },
-                { name: "description", content: "" }
+                { name: "description", content: "Bot" }
             ],
             "link": [],
             "style": [],
