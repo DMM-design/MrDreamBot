@@ -15,7 +15,23 @@ export default defineNuxtConfig({
             ],
             "link": [],
             "style": [],
-            "script": []
+            "script": [
+                {
+                    src: 'https://code.iconify.design/2/2.2.1/iconify.min.js'
+                }
+            ]
+        },
+    },
+    css: [
+        '@/assets/css/main.css'
+    ],
+    vite: {
+        css: {
+            preprocessorOptions: {
+                scss: {
+                    additionalData: '@import "@/assets/scss/main.scss";',
+                },
+            },
         },
     },
     alias: {

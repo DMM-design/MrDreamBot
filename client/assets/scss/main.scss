@@ -1,0 +1,32 @@
+// Colors
+$darkColorBG: #323544;
+$lightPurple: #A48AD4;
+$middlePurple: #392858;
+$darkPurple: #1E202C;
+$footerColor: #000000;
+// -Text
+$mainColor: #ffffff;
+$hoverColor: #B0B0B0;
+
+@mixin SetTextSettings( 
+        $size: 10px, 
+        $weight: 0,
+        $color: $mainColor
+    ) {
+    font-weight: $weight;
+    font-size: $size;
+    color: $color
+}
+
+@mixin SetIconSize($height: 0, $width: 0)
+{
+    height: $height;
+    width: $width;
+}
+
+@mixin SetFullSize()
+{
+    height: 100%;
+    width: 100%;
+}
+

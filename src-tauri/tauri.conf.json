@@ -56,10 +56,13 @@
     "windows": [
       {
         "fullscreen": false,
-        "height": 600,
+        "minWidth": 1743,
+        "minHeight": 1040,
+        "maxWidth": 1743,
+        "maxHeight": 1040,
         "resizable": true,
-        "title": "DreamBOT",
-        "width": 800
+        "maximized": true,
+        "title": "DreamBOT"
       }
     ]
   }
