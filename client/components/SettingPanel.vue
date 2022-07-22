@@ -1,10 +1,11 @@
 <style lang="scss" scoped>
-
+    
 </style>
 <template>
-    <div>
-       
+    <div class="">
+        
     </div>
 </template>
 <script setup>
+
 </script>

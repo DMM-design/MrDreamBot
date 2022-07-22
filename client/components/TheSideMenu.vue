@@ -1,4 +1,4 @@
-<style lang="scss">
+<style lang="scss" scoped>
 	aside{
 		background-color: $darkColorBG;
         height: 100vh;
@@ -76,35 +76,35 @@
 <template>
     <aside>
         <header>
-            <span class="iconify-inline" data-icon="icon-park-solid:avatar"></span>
+            <Icon class="iconify-inline" icon="icon-park-solid:avatar" />
             <div class="additional-information">
                 <span>Followers: 0 | Subscriptions: 0</span>
                 <h1>nick</h1>
             </div>
         </header>
         <main>
-            <NuxtLink class="activeLink" to="/">
-                <span class="iconify-inline" data-icon="ant-design:home-filled"></span>
+            <NuxtLink v-bind:class="['redirectLink', (route.path === '/')? 'activeLink' : '']" to="/">
+                <Icon class="iconify-inline" icon="ant-design:home-filled" />
                 HOME
             </NuxtLink>
-            <NuxtLink class="redirectLink" to="/timers">
-                <span class="iconify-inline" data-icon="ant-design:clock-circle-filled"></span>
+            <NuxtLink v-bind:class="['redirectLink', (route.path === '/timers')? 'activeLink' : '']" to="/timers">
+                <Icon class="iconify-inline" icon="ant-design:clock-circle-filled" />
                 TIMERS
             </NuxtLink>
-            <NuxtLink class="redirectLink" to="/commands">
-                <span class="iconify-inline" data-icon="clarity:command-solid"></span>
+            <NuxtLink v-bind:class="['redirectLink', (route.path === '/commands')? 'activeLink' : '']" to="/commands">
+                <Icon class="iconify-inline" icon="clarity:command-solid" />
                 COMMANDS
             </NuxtLink>
-            <NuxtLink class="redirectLink" to="/chat">
-                <span class="iconify-inline" data-icon="akar-icons:chat-bubble"></span>
+            <NuxtLink v-bind:class="['redirectLink', (route.path === '/chat')? 'activeLink' : '']" to="/chat">
+                <Icon class="iconify-inline" icon="akar-icons:chat-bubble" />
                 CHAT
             </NuxtLink>
-            <NuxtLink class="redirectLink" to="/games">
-                <span class="iconify-inline" data-icon="fluent:games-24-filled"></span>
+            <NuxtLink v-bind:class="['redirectLink', (route.path === '/games')? 'activeLink' : '']" to="/games">
+                <Icon class="iconify-inline" icon="fluent:games-24-filled" />
                 GAMES
             </NuxtLink>
-            <NuxtLink class="redirectLink" to="/settings">
-                <span class="iconify-inline" data-icon="clarity:settings-solid"></span>
+            <NuxtLink v-bind:class="['redirectLink', (route.path === '/settings')? 'activeLink' : '']" to="/settings">
+                <Icon class="iconify-inline" icon="clarity:settings-solid" />
                 SETTINGS
             </NuxtLink>
         </main>
@@ -114,4 +114,6 @@
     </aside>
 </template>
 <script setup>
+    import { Icon } from '@iconify/vue';
+    const route = useRoute();
 </script>

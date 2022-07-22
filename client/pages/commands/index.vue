@@ -1,5 +1,5 @@
 <template>
     <div>
-        Timer Vue
+        Commands view
     </div>
 </template>
