@@ -1,7 +1,12 @@
 <style lang="scss" scoped>
 </style>
+
 <template>
-    <SettingPanel />
+    <tr>
+        <td></td>
+    </tr>
 </template>
-<script setup>
+
+<script setup lang="ts">
+
 </script>

@@ -1,9 +1,9 @@
 <style lang="scss" scoped>
 	aside{
 		background-color: $darkColorBG;
+        color: #fff;
         height: 100vh;
-        width: 346px;
-        color: white;
+        width: 400px;
         
         header{
             height: 148px;
