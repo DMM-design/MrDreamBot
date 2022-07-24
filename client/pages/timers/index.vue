@@ -1,14 +1,25 @@
 <template>
-    <BaseTable :headerTable="TimerTableHeader" />
+    <main>
+        <header>    
+            <h1>{{titlePage}}</h1>
+            <div class="additiona-options">
+            </div>
+        </header>
+        <BaseTable 
+            :headerTable="TimerTableHeader" 
+        />
+    </main>
 </template>
 <script setup lang="ts">
-    const TimerTableHeader: Array<Object> = [
-        {tableHeaderTXT: 'Enabled'}, 
-        {tableHeaderTXT: 'Name'}, 
-        {tableHeaderTXT: 'Message'}, 
-        {tableHeaderTXT: 'Interval Online'}, 
-        {tableHeaderTXT: 'Chat Lines'}, 
-        {tableHeaderTXT: 'Delete'}, 
-        {tableHeaderTXT: 'Edit'}
+    const titlePage: string = 'TIMERS';
+    const nameButtonTxt: string = 'ADD NEW TIMERS';
+    const TimerTableHeader: Array<string> = [
+         'Enabled', 
+         'Name', 
+         'Message', 
+         'Interval Online', 
+         'Chat Lines', 
+         'Delete', 
+         'Edit'
     ]; 
 </script>

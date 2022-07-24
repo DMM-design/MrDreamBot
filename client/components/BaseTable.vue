@@ -4,8 +4,7 @@
 <template>
     <table>
         <thead>
-            {{headerTable}}
-            <!-- <th v-for="header in headerTable" :key="header">{{header}}</th> -->
+            <th v-for="header in headerTable" :key="header">{{header}}</th>
         </thead>
         <tbody>
         </tbody>
@@ -14,6 +13,6 @@
 
 <script setup lang="ts">
     defineProps<{
-        headerTable?: Array<Object>
+        headerTable?: Array<string>
     }>()
 </script>
