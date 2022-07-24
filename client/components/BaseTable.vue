@@ -13,6 +13,6 @@
 
 <script setup lang="ts">
     defineProps<{
-        headerTable?: Array<string>
+        headerTable?: Array<string>,
     }>()
 </script>

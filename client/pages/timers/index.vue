@@ -1,18 +1,24 @@
+<style lang="scss" scoped>
+
+</style>
 <template>
     <main>
         <header>    
             <h1>{{titlePage}}</h1>
-            <div class="additiona-options">
-            </div>
+            <AdditionalOptions 
+                :nameButton="nameButtonTxt"
+                :placeholder="placeholderSearch"
+            />
         </header>
         <BaseTable 
-            :headerTable="TimerTableHeader" 
+            :headerTable="TimerTableHeader"
         />
     </main>
 </template>
 <script setup lang="ts">
     const titlePage: string = 'TIMERS';
     const nameButtonTxt: string = 'ADD NEW TIMERS';
+    const placeholderSearch: string = 'Search...';
     const TimerTableHeader: Array<string> = [
          'Enabled', 
          'Name', 
